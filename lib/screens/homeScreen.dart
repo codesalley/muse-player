@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:muse/utilities/nav_buttons.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class HomeScreen extends StatelessWidget {
+
+  void getpermission()sync*{
+
+    Permission permission = await Permission.storage.request();
+
+    if() {
+
+    }
+
+
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -46,28 +60,28 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    myList.nav[0],
+                    MyList.nav[0],
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
                     ),
                   ),
                   Text(
-                    myList.nav[1],
+                    MyList.nav[1],
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
                     ),
                   ),
                   Text(
-                    myList.nav[2],
+                    MyList.nav[2],
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
                     ),
                   ),
                   Text(
-                    myList.nav[3],
+                    MyList.nav[3],
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
@@ -125,7 +139,10 @@ class HomeScreen extends StatelessWidget {
                       'Davido',
                       style: TextStyle(color: Colors.white),
                     ),
-                    trailing: Icon(Icons.nav),
+                    trailing: Icon(
+                      Icons.more_vert,
+                      color: Colors.white,
+                    ),
                   )
                 ],
               ),

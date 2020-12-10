@@ -5,7 +5,7 @@ void main() {
   runApp(MaterialApp(
     theme: ThemeData(
       textTheme: TextTheme(
-        headline: TextStyle(
+        bodyText1: TextStyle(
           color: Colors.white,
         ),
       ),
