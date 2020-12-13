@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/homeScreen.dart';
+import 'constant.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -11,7 +12,7 @@ void main() {
       ),
     ),
     home: Scaffold(
-      backgroundColor: Colors.white30,
+      backgroundColor: KbackgroundColor,
       body: HomeScreen(),
     ),
   ));
